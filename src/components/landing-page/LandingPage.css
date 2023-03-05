@@ -1,0 +1,43 @@
+.main-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    margin: auto;
+    margin-top: 200px;
+}
+.main-text span{
+    color: var(--addition-color);
+    display: flex;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+@media screen and (max-width:510px) {
+    .main-text{
+        font-size: 20px;
+    }
+    .logo{
+        min-width: 160px;
+    }
+    
+}
+
+@media screen and (max-width:295px) {
+    .main-text{
+        font-size: 17px;
+    }
+}
+
+
+
+
+
+
