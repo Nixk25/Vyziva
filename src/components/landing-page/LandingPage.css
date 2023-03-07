@@ -4,28 +4,52 @@
     align-items: center;
     font-size: 35px;
     margin: auto;
-    margin-top: 200px;
+    color: #393D47;
 }
 .main-text span{
     color: var(--addition-color);
     display: flex;
 }
 
-.logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    min-width: 200px;
-    max-width: 300px;
+.main-wrapper{
+    margin-top: 200px;
 }
 
-@media screen and (max-width:510px) {
+
+.logo{
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+}
+
+
+
+
+.main-logo{
+    text-align: center;
+    margin-bottom: 300px;
+}
+
+.secondary-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #393D47;
+}
+
+@media screen and (max-width:532px) {
     .main-text{
         font-size: 20px;
     }
+    .secondary-text{
+        font-size: 15px;
+    }
     .logo{
-        min-width: 160px;
+        min-width: 140px;
     }
     
 }
