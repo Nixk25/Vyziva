@@ -1,14 +1,22 @@
 .services-headline{
     text-align: center;
     margin-bottom: 60px;
+    position: relative;
 }
 
-.services-headline span{
-    font-size: 35px;
+
+
+.headline-bigger{
+    font-size: 45px;
     text-shadow: 2px 2px 4px rgba(179, 147, 211, 0.1),
     3px 4px 4px rgba(179, 147, 211, 0.15),
     4px 6px 4px rgba(179, 147, 211, 0.2),
     5px 8px 4px rgba(179, 147, 211, 0.25);
+}
+
+
+.headline-color{
+    color: #ff0858;
 }
 
 .services-items__wrapper{
@@ -22,11 +30,22 @@
     width: 390px;
     height: 300px;
     border: 2px solid black;
-    margin-right: 30px;
+    margin-right: 15px;
     margin-bottom: 30px;
     padding: 40px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 40px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.services-item__link{
+    text-decoration: none;
+    color: black;
+}
+
+.services-item:hover{
+    scale: 1.04;
 }
 
 .services-item h4{
@@ -36,55 +55,62 @@
 
 .services-item p{
     margin-bottom: 10px;
+    font-size: 16px;
 }
 
 
 .services-item__button{
-    width: 10em;
-    position: relative;
-    height: 3.5em;
-    border: 3px ridge #FF6093;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
     outline: none;
-    background-color: transparent;
-    color: white;
-    transition: 1s;
-    border-radius: 0.3em;
-    font-size: 16px;
-    font-weight: bold;
 }
 
 
-.services-item__button::after {
-    content: " ";
-    position: absolute;
-    top: -10px;
-    left: 3%;
-    width: 95%;
-    height: 40%;
-    background-color: #F2D5DE;
-    transition: 0.5s;
-    transform-origin: center;
+.services-item__button:hover {
+    background-color: #FF6093;
+    box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transform: translateY(-5px);
 }
-
-.services-item__button::before{
-    content: " ";
-    transform-origin: center;
-    position: absolute;
-    top: 80%;
-    left: 3%;
-    width: 95%;
-    height: 40%;
-    background-color: #F2D5DE;
-    transition: 0.5s;
+  
+.services-item__button:active {
+    transform: translateY(-1px);
 }
 
 
-.services-item__button:hover::before, .services-item button:hover::after{
-    transform: scale(0);
+
+@media screen and (max-width:768px){
+    .services-item{
+        margin-right: 0;
+    }
 }
 
+@media screen and (max-width:420px) {
+    .services-item{
+        margin-right: 0;
+        width: 250px;
+        height: 300px;
+    }
 
-.services-item__button:hover{
-    box-shadow: inset 0px 0px 25px #FF6093;
+    .services-item h4{
+        font-size: 15px;
+    }
+    .services-item p{
+        font-size: 11px;
+
+    }
+
+    .services-item__button{
+        font-size: 10px;
+    }
+    
 }
-

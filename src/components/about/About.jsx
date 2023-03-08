@@ -7,7 +7,7 @@ const About = () => {
       <div className="container">
         <div className="about-wrapper">
           <div className="about-headline ">
-            <h1 className='headline'>Něco málo <br /> <span>O Mně</span></h1>
+            <h1 className='headline'>Něco málo <br /> <span className='headline-bigger'>O <span className='headline-color'>M</span>n<span className='headline-color'>ě</span></span></h1>
           </div>
           <div className="about-text">
             <div className="first-text">
