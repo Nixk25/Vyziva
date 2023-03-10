@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+
+
 .about-wrapper{
     margin-bottom: 200px;
 }
@@ -14,14 +19,15 @@
     3px 4px 4px rgba(179, 147, 211, 0.15),
     4px 6px 4px rgba(179, 147, 211, 0.2),
     5px 8px 4px rgba(179, 147, 211, 0.25);
+    font-family: 'Lobster', cursive;
+    color:#EF86C1;
 }
 
-.headline-color{
-    color: #ff0858 ;
-}
+
 
 .about-text{
     text-align: center;
+    margin-inline: 20px;
 }
 
 .first-text{

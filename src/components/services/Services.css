@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+
 .services-headline{
     text-align: center;
     margin-bottom: 60px;
@@ -12,12 +16,11 @@
     3px 4px 4px rgba(179, 147, 211, 0.15),
     4px 6px 4px rgba(179, 147, 211, 0.2),
     5px 8px 4px rgba(179, 147, 211, 0.25);
+    font-family: 'Lobster', cursive;
+    color: #EF86C1;
 }
 
 
-.headline-color{
-    color: #ff0858;
-}
 
 .services-items__wrapper{
     display: flex;
@@ -29,14 +32,13 @@
 .services-item{
     width: 390px;
     height: 300px;
-    border: 2px solid black;
+    border: 3px solid #EF86C1;
     margin-right: 15px;
     margin-bottom: 30px;
     padding: 40px;
     text-align: center;
     border-radius: 40px;
     transition: all ease 0.5s;
-    cursor: pointer;
 }
 
 .services-item__link{
