@@ -4,10 +4,10 @@ import PetrBefore from "../../../assets/Petr-K.-Before.jpeg"
 import PetrAfter from "../../../assets/Petr-K.-After.jpeg"
 
 
-const Modal = (props) => {
+const Petr = (props) => {
 
   return (
-   <div onClick={props.onClose} className={`modal ${props.show ? "show" : ""}`} >
+   <div onClick={props.petrClose} className={`modal ${props.show ? "show" : ""}`} >
         <div className="modal-content" onClick={e => e.stopPropagation()}>
             <div className="modal-header">
                 <h2 className='modal-title'>Petr K.</h2>
@@ -17,11 +17,11 @@ const Modal = (props) => {
                 <img src={PetrAfter} alt="" />
             </div>
             <div className="modal-footer">
-                <button onClick={props.onClose} className="button">Zavřít</button>
+                <button onClick={props.petrClose} className="button">Zavřít</button>
             </div>
         </div> 
    </div>
   )
 }
 
-export default Modal
+export default Petr

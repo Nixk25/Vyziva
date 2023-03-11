@@ -1,10 +1,43 @@
 import React from 'react'
 import "./Contacts.css"
+import {ImLocation2} from "react-icons/im"
+import {BsFillTelephoneInboundFill} from "react-icons/bs"
+import {IoIosMail} from "react-icons/io"
+import {RiInstagramFill} from "react-icons/ri"
+
+
 
 
 const Contacts = () => {
   return (
-    <div>Contacts</div>
+    <section id="contact">
+      <div className="container">
+          <div className="contact-title">
+            <h1 className="headline">Pošlete mi <br /> <span className='headline-bigger'>Zprávu</span></h1>
+          </div>
+        <div className="contact-block">
+          <div class="contact-form">
+            <span class="heading">Kontaktujte mě</span>
+          <form>
+            <label for="name">Vaše jméno:</label>
+            <input type="text" required></input>
+            <label for="email">Váš e-mail:</label>
+            <input type="email" id="email" name="email" required></input>
+            <label for="message">Napište mi zprávu:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Odeslat</button>
+          </form>
+          </div>
+          <div className="contacts">
+            <h1 className='contacts-title'>Kontakt na mě</h1>
+            <a className='location' href="https://www.google.com/maps/place/Výživové+Poradenstv%C3%AD+Lucie/@49.9520795,16.1630052,17z/data=!3m1!4b1!4m6!3m5!1s0x470dc1192e940bc3:0x5ea83f73f67c527!8m2!3d49.9520795!4d16.1651939!16s%2Fg%2F11hndk7y2r"><span><ImLocation2/><span className='text-aside'>Nutriční poradenství Lucie, Žerotínova 438, Vysoké Mýto</span></span></a>
+            <a className='telephone' href="tel:725100006"><span><BsFillTelephoneInboundFill/><span className='text-aside'> 725 100 006</span></span></a>
+            <a className='location' href="mailto:nutricni.poradenstvi.vm@seznam.cz"><span><IoIosMail/><span className='text-aside'>nutricni.poradenstvi.vm@seznam.cz</span></span></a>
+            <a className='instagram' href="www.instagram.com/nutricniporadenstvi.lucie/" target={'_blank'}><span><RiInstagramFill/><span className='text-aside'>nutricniporadenstvilucie</span></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }
 

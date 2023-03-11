@@ -1,0 +1,127 @@
+
+
+
+.headline{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+.contact-block{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.contacts{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: black;
+}
+
+.location, .telephone, .mail{
+    margin-bottom: 20px;
+}
+
+
+.contacts-title{
+    margin-bottom: 20px;
+    border-bottom:grey 1px solid;
+}
+
+.text-aside{
+    margin-left: 10px;
+}
+
+.contact-form {
+    background-color: #FFE0EA;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    justify-content: center;
+}
+  
+  .contact-form label {
+    color: black;
+}
+  
+  .contact-form .heading {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 12px;
+    font-weight: bold;
+    display: block;
+}
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+  
+  .contact-form label {
+    margin-bottom: 10px;
+}
+  
+  textarea {
+    resize: none;
+    height: 80px;
+    width: 100%
+}
+  
+  .contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: all ease 0.5s;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #EF86C1;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact-form button[type="submit"] {
+    background-color: #EF86C1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+  }
+  
+  .contact-form button[type="submit"]:hover {
+    transform: scale(1.05);
+
+  }
+  
+@media screen and (max-width:860px) {
+    .contact-block{
+        display: block;
+    }
+    
+    .contacts{
+        width: 100%;
+    }
+
+    .contact-form{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .contacts{
+        font-size: 11px;
+    }
+}
