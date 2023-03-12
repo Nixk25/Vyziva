@@ -11,21 +11,22 @@ import {RiInstagramFill} from "react-icons/ri"
 const Contacts = () => {
   return (
     <section id="contact">
-      <div className="container">
+      <div className="container-contacts">
           <div className="contact-title">
             <h1 className="headline">Pošlete mi <br /> <span className='headline-bigger'>Zprávu</span></h1>
           </div>
         <div className="contact-block">
           <div class="contact-form">
             <span class="heading">Kontaktujte mě</span>
-          <form>
-            <label for="name">Vaše jméno:</label>
-            <input type="text" required></input>
+          <form action='https://formsubmit.co/nutricni.poradenstvi.vm@seznam.cz' method='POST'>
+            <label for="jméno">Vaše jméno:</label>
+            <input type="text" name='jméno' required></input>
             <label for="email">Váš e-mail:</label>
             <input type="email" id="email" name="email" required></input>
-            <label for="message">Napište mi zprávu:</label>
-            <textarea id="message" name="message" required></textarea>
+            <label for="zpráva">Napište mi zprávu:</label>
+            <textarea id="message" name="zpráva" required></textarea>
             <button type="submit">Odeslat</button>
+            
           </form>
           </div>
           <div className="contacts">

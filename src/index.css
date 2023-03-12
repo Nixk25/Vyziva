@@ -8,6 +8,7 @@
     outline: 0;
     list-style: none;
     text-decoration: none;
+   
 }
 body{
     font-family: "Poppins", sans-serif;
@@ -28,11 +29,6 @@ body{
 }
 
 
-.container{
-    max-width: 1440px;
-    width: 96%;
-    margin: auto;
-}
 
 
 

@@ -1,16 +1,19 @@
-
+.container-contacts{
+  min-height: 100vh;
+  overflow: hidden;
+}
 
 
 .headline{
-    text-align: center;
-    margin-bottom: 100px;
+  margin-top: 105px;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
 
 .contact-block{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 100px;
 }
 
 .contacts{
@@ -40,6 +43,7 @@
 }
 
 .contact-form {
+  border: 3px solid #EF86C1;
     background-color: #FFE0EA;
     padding: 20px;
     border-radius: 10px;

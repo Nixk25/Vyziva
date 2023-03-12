@@ -5,17 +5,19 @@ import About from "./components/about/About"
 import Services from "./components/services/Services"
 import Portfolio from "./components/portfolio/Portfolio"
 import Contact from "./components/contacts/Contacts"
-
+import {Routes, Route} from "react-router-dom"
 
 const App = () => {
   return (
     <>
-      <LandingPage/>
       <Nav/>
-      <About/>
-      <Services/>
-      <Portfolio/>
-      <Contact/>
+      <Routes>
+      <Route path='/' element={<LandingPage/>}/>
+      <Route path='/about' element={<About/>}/>
+      <Route path='/services' element={<Services/>}/>
+      <Route path='/portfolio' element={<Portfolio/>}/>
+      <Route path='/contact' element={<Contact/>}/>
+      </Routes>
     </>
   )
 }
