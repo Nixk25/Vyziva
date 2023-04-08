@@ -40,6 +40,22 @@
 
 .text-aside{
     margin-left: 10px;
+    transition: all ease 0.3s;
+}
+
+.text-aside:hover{
+  color: #FF6093;
+}
+
+
+.contact-icon{
+  transition: all ease 0.3s;
+}
+
+
+
+.contact-icon:hover{
+  color: #FF6093;
 }
 
 .contact-form {
@@ -88,13 +104,13 @@
   
   .contact-form input:focus, .contact-form textarea:focus {
     outline: none;
-    box-shadow: 0 0 5px #EF86C1;
+    box-shadow: 0 0 5px #FF6093;
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
   }
   
-  .contact-form button[type="submit"] {
-    background-color: #EF86C1;
+  .contact-form button {
+    background-color: #FF6093;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -104,7 +120,7 @@
     transition: all ease 0.5s;
   }
   
-  .contact-form button[type="submit"]:hover {
+  .contact-form button:hover {
     transform: scale(1.05);
 
   }
