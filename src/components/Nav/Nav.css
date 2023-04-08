@@ -27,6 +27,7 @@ nav a{
 nav a:hover{
     background-color: var(--main-color);
     color: var(--addition-color);
+    cursor: pointer;
 }
 
 nav a.active{

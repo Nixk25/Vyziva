@@ -4,7 +4,7 @@ import Petr from '../modals/Petr-K./Petr'
 import { useState } from 'react'
 import Iveta from '../modals/Iveta-K./Iveta'
 import Milan from '../modals/Milan-B./Milan'
-
+import { Link } from 'react-router-dom'
 
 
 const Portfolio = () => {
@@ -55,6 +55,7 @@ const Portfolio = () => {
               </div>
               <Milan milanClose={() => setOut(false)} out={out}/>
             </div>
+            <Link to="/cart">Cart</Link>
           </div>
         </div>
       </div>

@@ -30,9 +30,17 @@
 }
 
 
-.modal-content img{
-    width: 46%;
-    height: 350px;
+.Petr-Before{
+    width: 34%;
+    height: 300px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+
+.Petr-After{
+    width: 47%;
+    height: 300px;
     margin-right: 10px;
     border-radius: 10px;
 }

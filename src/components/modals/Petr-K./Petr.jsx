@@ -13,8 +13,8 @@ const Petr = (props) => {
                 <h2 className='modal-title'>Petr K.</h2>
             </div>
             <div className="modal-body">
-                <img src={PetrBefore} alt="" />
-                <img src={PetrAfter} alt="" />
+                <img className='Petr-Before' src={PetrBefore} alt="" />
+                <img className='Petr-After' src={PetrAfter} alt="" />
             </div>
             <div className="modal-footer">
                 <button onClick={props.petrClose} className="button">Zavřít</button>

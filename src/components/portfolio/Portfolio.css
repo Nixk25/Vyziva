@@ -3,7 +3,9 @@
     overflow: hidden;
 }
 
-
+.show{
+    cursor: default;
+}
 
 .portfolio-headline{
     margin-top: 200px;
@@ -25,7 +27,7 @@
     width: 30%;
     text-align: center;
     gap: 10px;
-    border: 3px solid #EF86C1 ;
+    border: 3px solid #EF86C1;
     border-radius: 20px;
     cursor: pointer;
     transition: all ease 0.3s;

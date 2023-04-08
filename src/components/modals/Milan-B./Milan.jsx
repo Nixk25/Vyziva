@@ -12,8 +12,8 @@ const Milan = (props) => {
                 <h2 className='modal-title'>Milan B.</h2>
             </div>
             <div className="modal-body">
-                <img src={MilanBefore} alt="" />
-                <img src={MilanAfter} alt="" />
+                <img className='Milan-Before' src={MilanBefore} alt="" />
+                <img className='Milan-After' src={MilanAfter} alt="" />
             </div>
             <div className="modal-footer">
                 <button onClick={props.milanClose} className="button">Zavřít</button>

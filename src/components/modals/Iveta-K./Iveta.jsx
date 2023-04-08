@@ -13,8 +13,8 @@ const Iveta = (props) => {
                 <h2 className='modal-title'>Iveta K.</h2>
             </div>
             <div className="modal-body">
-                <img src={IvetaBefore} alt="" />
-                <img src={IvetaAfter} alt="" />
+                <img className='Iveta-Before' src={IvetaBefore} alt="" />
+                <img className='Iveta-After' src={IvetaAfter} alt="" />
             </div>
             <div className="modal-footer">
                 <button onClick={props.ivetaClose} className="button">Zavřít</button>
