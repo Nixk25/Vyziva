@@ -11,7 +11,7 @@ import {RiInstagramFill} from "react-icons/ri"
 const Contacts = () => {
   return (
     <section id="contact">
-      <div className="container-contacts">
+      <div className="container">
           <div className="contact-title">
             <h1 className="headline">Pošlete mi <br /> <span className='headline-bigger'>Zprávu</span></h1>
           </div>

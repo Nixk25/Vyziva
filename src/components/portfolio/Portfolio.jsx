@@ -4,7 +4,7 @@ import Petr from '../modals/Petr-K./Petr'
 import { useState } from 'react'
 import Iveta from '../modals/Iveta-K./Iveta'
 import Milan from '../modals/Milan-B./Milan'
-import { Link } from 'react-router-dom'
+
 
 
 const Portfolio = () => {
@@ -16,7 +16,7 @@ const Portfolio = () => {
 
   return (
     <section id="portfolio">
-      <div className="container-portfolio">
+      <div className="container">
         <div className="portfolio-wrapper">
           <div className="portfolio-headline">
             <h1 className='headline'>Moje <br /><span className='headline-bigger'>Portfolio</span></h1>
@@ -55,7 +55,6 @@ const Portfolio = () => {
               </div>
               <Milan milanClose={() => setOut(false)} out={out}/>
             </div>
-            <Link to="/cart">Cart</Link>
           </div>
         </div>
       </div>

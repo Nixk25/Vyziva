@@ -1,7 +1,4 @@
-.container-contacts{
-  min-height: 100vh;
-  overflow: hidden;
-}
+
 
 
 .headline{
@@ -143,5 +140,11 @@
 @media screen and (max-width:430px) {
     .contacts{
         font-size: 11px;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .contact-icon{
+      font-size: 12px;
     }
 }

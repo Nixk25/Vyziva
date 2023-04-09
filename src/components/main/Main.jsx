@@ -5,6 +5,9 @@ import Services from '../services/Services'
 import Nav from '../Nav/Nav'
 import Portfolio from '../portfolio/Portfolio'
 import Contacts from '../contacts/Contacts'
+import Shop from '../Shop/Shop'
+
+
 
 const Main = () => {
   return (
@@ -14,6 +17,7 @@ const Main = () => {
     <About/>
     <Services/>
     <Portfolio/>
+    <Shop/>
     <Contacts/>
     </>
   )

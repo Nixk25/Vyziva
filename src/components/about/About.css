@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-.container-about{
-    min-height: 100vh;
-    overflow: hidden;
-}
+
 
 
 
@@ -44,7 +41,7 @@
 
 @media screen and (max-width:420px) {
     .about-text{
-        font-size: 11px;
+        font-size: 13px;
     }
 }
 

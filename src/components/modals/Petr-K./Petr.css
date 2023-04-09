@@ -90,3 +90,22 @@
         width: 96%;
     }
 }
+
+@media screen and (max-width: 350px ){
+    .modal-content{
+        padding: 0;
+    }
+
+    .modal-header{
+        padding: 0;
+    }
+
+    .modal.show{
+        top: 80px;
+    }
+
+    .modal-footer{
+        padding: 10px;
+    }
+}
+

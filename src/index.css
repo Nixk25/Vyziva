@@ -10,6 +10,11 @@
     text-decoration: none;
 }
 
+.container{
+    margin: 0 auto;
+    width: 96%;
+}
+
 
 body{
     font-family: "Poppins", sans-serif;

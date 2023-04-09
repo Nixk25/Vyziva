@@ -6,7 +6,7 @@ import "animate.css"
 const LandingPage = () => {
   return (
     <section id='home'>
-      <div className="container-landing">
+      <div className="container">
         <div className="main-wrapper">
           <h3 className='secondary-text'>
             Vítejte na mých stránkách
