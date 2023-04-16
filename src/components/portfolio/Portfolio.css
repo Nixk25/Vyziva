@@ -21,6 +21,7 @@
 
 .project{
     width: 30%;
+    height: 400px;
     text-align: center;
     gap: 10px;
     border: 3px solid #EF86C1;
@@ -38,7 +39,7 @@
 }
 
 
-@media screen and (max-width:860px) {
+@media screen and (max-width:1340px) {
     .project{
         width: 90%;
         display: block;

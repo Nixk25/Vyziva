@@ -2,9 +2,11 @@ import React from 'react'
 import "./LandingPage.css"
 import image from "../../assets/Logo.png"
 import "animate.css"
-
 const LandingPage = () => {
+
+
   return (
+    <>
     <section id='home'>
       <div className="container">
         <div className="main-wrapper">
@@ -20,6 +22,7 @@ const LandingPage = () => {
         </div>
       </div>
     </section>
+    </>
   )
 }
 

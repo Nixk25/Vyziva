@@ -1,0 +1,21 @@
+
+
+.activeSpan{
+        position: absolute;
+        top: -10px;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: #FF6093;
+        font-size: 12px;
+        color: #fff;
+}
+
+.cart-icon{
+    color: black;
+    position: absolute;
+    top: 20%;
+    left: 23%;
+}
