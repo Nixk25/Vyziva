@@ -8,8 +8,7 @@ import Contacts from '../contacts/Contacts'
 import Shop from '../Shop/Shop'
 
 
-
-const Main = () => {
+const Main = ({products, handleAddToCart, totalItems}) => {
   return (
     <>
     <Nav/>
@@ -17,7 +16,7 @@ const Main = () => {
     <About/>
     <Services/>
     <Portfolio/>
-    <Shop/>
+    <Shop products={products} handleAddToCart={handleAddToCart} totalItems={totalItems} />
     <Contacts/>
     </>
   )

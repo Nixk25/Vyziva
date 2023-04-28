@@ -3,7 +3,7 @@ import "./Services.css"
 import {Link} from "react-scroll"
 const Services = () => {
   return (
-    <section id="services">
+    <section id="services" className='services'>
       <div className="container">
         <div className="services-wrapper">
             <div className="services-headline">

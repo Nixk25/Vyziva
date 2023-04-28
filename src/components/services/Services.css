@@ -1,12 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 
+.services{
+    background-color: #edd6d6;
+    padding-top:50px ;
+    padding-bottom:50px ;
+    margin-top: 100px;
+    position: relative;
+}
 
+.services::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 5%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #e5e5e5, transparent);
+    z-index: 5;
+}
+
+.services::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 5%;
+    width: 100%;
+    background-image: linear-gradient(to top, #e5e5e5, transparent);
+    z-index: 5;
+}
 
 
 
 .services-headline{
-    margin-top: 200px;
     text-align: center;
     margin-bottom: 60px;
     position: relative;

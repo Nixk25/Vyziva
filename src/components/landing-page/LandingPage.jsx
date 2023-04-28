@@ -7,7 +7,7 @@ const LandingPage = () => {
 
   return (
     <>
-    <section id='home'>
+    <section className='landing-page' id='home'>
       <div className="container">
         <div className="main-wrapper">
           <h3 className='secondary-text'>

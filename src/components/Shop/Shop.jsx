@@ -1,33 +1,27 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./Shop.css"
-import {PRODUCTS} from "../../products"
 import Product from './Product'
-import {Link} from "react-router-dom"
-import {HiShoppingCart} from "react-icons/hi"
+import { Link } from 'react-router-dom'
+import { HiShoppingCart } from 'react-icons/hi'
 
 
-const Shop = () => {
-  const [activeSpan, setActiveSpan] = useState("")
-
-
-  const span = () =>{
-    setActiveSpan("activeSpan")
-  }
-
+const Shop = ({products, handleAddToCart, totalItems}) => {
   return (
-    <section id='shop'>
+    <section id='shop' className='shop'>
         <div className="container">
             <div className="shop-wrapper">
                 <div className="shop-headline">
                     <h1 className="headline">Něco si můžete <br /><span className="headline-bigger">Koupit</span></h1>
                 </div>
                 <div className="products">
-                  {PRODUCTS.map((product) => <Product activeSpan={span} data={product}/>)}
+                  {products.map((product) =>
+                    <Product product={product} handleAddToCart={handleAddToCart} key={product.id} />
+                  )}
                 </div>
-            </div>
-            <div className='cart'>
-              <Link className='cart-icon' to="/cart"><HiShoppingCart/></Link>
-              <span className={activeSpan}></span>
+                <div className="cart-total">
+                  <Link to="/cart" className='cart-icon'><HiShoppingCart/></Link>
+                  <span className='totalProducts'>{totalItems}</span>
+                </div>
             </div>
         </div>
     </section>

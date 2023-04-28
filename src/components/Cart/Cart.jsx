@@ -1,27 +1,43 @@
-import React, { useContext } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
 import "./Cart.css"
-import {PRODUCTS} from "../../products"
-import {ShopContext} from "../../context/shop-context"
 import CartItem from './CartItem'
+import {Link} from "react-router-dom"
+
+const Cart = ({cart, handleUpdateCartQty,handleRemoveFromCart,handleEmptyCart}) => {
+
+  const EmptyCart = () => (
+    <p className='nothing'>Nemáte žádné věci v košíku</p>
+  )
 
 
-const Cart = () => {
-  const {cartItems} = useContext(ShopContext)
+  const FilledCart = () =>(
+    <>
+      <div className="cart-items">
+        {cart?.line_items && cart?.line_items.map((item)=>(
+          <div className="items" key={item.id}>
+            <div><CartItem item={item} handleUpdateCartQty={handleUpdateCartQty} handleRemoveFromCart={handleRemoveFromCart}  /></div>
+          </div>
+        ))}
+      </div>
+        <div className="details">
+          <div className="subtotal">
+            <strong>Celkem: {cart?.subtotal?.formatted_with_code}</strong>
+          </div>
+          <div className="buttons-cart">
+            <button className="empty-cart" onClick={handleEmptyCart}>Vyprázdnit košík</button>
+            <Link to="/checkout"><button className='checkout'>Zaplatit</button></Link>
+          </div>
+        </div>
+  </>
+  )
 
-
+  if (!cart?.line_items) return "Loading...";
 
   return (
     <div>
       <div>
         <h1 className='headline'>Váš košík</h1>
-      </div>
-      <div>
-        {PRODUCTS.map((product)=>{
-          if (cartItems[product.id] !==0){
-            return <CartItem data={product}/>
-          }
-        })}
+        {cart?.line_items?.length ===0 ? <EmptyCart/> : <FilledCart/>} 
       </div>
     </div>
   )

@@ -1,28 +1,25 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import "./Product.css"
 import {AiOutlinePlus} from "react-icons/ai"
-import {ShopContext} from "../../context/shop-context"
 
 
 
-const Product = (props) => {
-    const {id, productName,price,image} = props.data;
+const Product = ({product, handleAddToCart}) => {
 
-    const {addToCart} = useContext(ShopContext)
+
   
-  
-
-
     return (
-    <div className='product'>
+    <div className='product' >
+        <div className="container">
         <div className="description" >
-            <img src={image} alt="vyzivove doplnky" />
-            <p className='name'><b>{productName}</b></p>
-            <p>Cena: {price}Kč</p>
-            <button className="addToCartBtn" onClick={props.activeSpan}>
+            <img className='product-img' src={product.image.url} alt="vyzivove doplnky" />
+            <p className='name'><b>{product.name}</b></p>
+            <strong><p>Cena: {product.price.formatted_with_code}</p></strong>
+            <button className="addToCartBtn" onClick={() => handleAddToCart(product.id, 1)} >
                 <span className='button-text'>Přidat do košíku</span>
                 <span className='button-icon'><AiOutlinePlus/></span>
             </button>
+        </div>
         </div>
     </div>
   )

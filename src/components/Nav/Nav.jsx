@@ -9,11 +9,12 @@ import {AiTwotonePhone} from "react-icons/ai"
 import { Link} from "react-scroll";
 
 
+
 const Nav = () => {
   
 
   return (
-    <>
+    <div>
     <nav>
       <Link activeClass="active" to="home" spy={true} smooth={true} offset={-200}duration={500}><FaHome/> </Link>
       <Link activeClass="active" to="about" spy={true} smooth={true} offset={-220}duration={500}> <FaUserAlt/> </Link>
@@ -22,7 +23,7 @@ const Nav = () => {
       <Link activeClass='active' to='shop' spy={true} smooth={true} offset={-200}duration={500}><HiShoppingCart/></Link>
       <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-300}duration={500}><AiTwotonePhone/> </Link>
     </nav>
-    </>
+    </div>
   )
 }
 
