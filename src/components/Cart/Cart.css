@@ -1,3 +1,5 @@
+
+
 .headline{
     margin: auto;
 }
@@ -14,7 +16,7 @@
     margin-inline: 20px;
 }
 
-.empty-cart, .checkout{
+.empty-cart, .checkout,.back-to__main{
     width: max-content;
     padding: 10px;
     border-radius: 10px;
@@ -27,7 +29,15 @@
     transition: all ease 0.3s;
 }
 
-.empty-cart:hover, .checkout:hover{
+
+.empty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.empty-cart:hover, .checkout:hover,.back-to__main:hover{
     scale: 1.04;
 }
 

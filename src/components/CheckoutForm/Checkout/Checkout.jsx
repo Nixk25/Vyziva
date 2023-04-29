@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import {Paper, Stepper, Step, StepLabel, Typography} from "@material-ui/core"
+import {Paper, Stepper, Step, StepLabel, Typography,Divider,CircularProgress} from "@material-ui/core"
 import useStyles from "./styles"
 import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import {commerce} from "../../lib/commerce";
+import { Link } from 'react-router-dom';
 
 
 const steps = ["Informace o Vás", "Platba"];
@@ -22,11 +23,19 @@ const Checkout = ({cart, order, handleCaptureCheckout}) => {
         generateToken();
     },[]);
 
-    const Confirmation = () => (
+    let Confirmation = () => order.customer ?(
         <div>
-            Confirmation
+            <Typography variant='h5'>Děkuji za vaši objednávku, {order.customer.firstname} {order.customer.lastname}</Typography>
+            <Divider className={classes.divider}/>
+            <Typography variant='subtitle2'>Objednávka: {order.custromer_reference}</Typography>
+            <br />
+            <Link to="/"><button className='back-to__shop'>Zpět do obchodu</button></Link>
         </div>
-    )
+    ) : (
+        <div className={classes.spinner}>
+            <CircularProgress/>
+        </div>
+    );
 
     const Form = () => activeStep ===0 ? <AddressForm next={next}/>: <PaymentForm data={data} checkoutToken={checkoutToken} backStep={backStep} handleCaptureCheckout={handleCaptureCheckout} nextStep={nextStep}/>
 
