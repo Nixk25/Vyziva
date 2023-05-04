@@ -18,7 +18,6 @@
 
 body{
     font-family: "Poppins", sans-serif;
-    background-color: #e5e5e5;
     line-height: 1.7;
     background-size: cover;
     background-repeat: no-repeat;
@@ -33,6 +32,9 @@ body{
     --secondary-color: #FFA0BE;
     --addition-color: #FF6093;
 }
+
+
+
 
 
 

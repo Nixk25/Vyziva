@@ -29,7 +29,7 @@ const Checkout = ({cart, order, handleCaptureCheckout}) => {
             <Divider className={classes.divider}/>
             <Typography variant='subtitle2'>Objednávka: {order.custromer_reference}</Typography>
             <br />
-            <Link to="/"><button className='back-to__shop'>Zpět do obchodu</button></Link>
+            <Link to="/"><button className='back-to__main'>Zpět do obchodu</button></Link>
         </div>
     ) : (
         <div className={classes.spinner}>

@@ -1,7 +1,8 @@
 .landing-page{
-    background-color: #edd6d6;
+    background-color: #FFE0EA;
     position: relative;
     padding-bottom: 30px;
+    height: 100vh;
 }
 
 .landing-page::before{
@@ -9,9 +10,8 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 7%;
-    background-image: linear-gradient(to top, #e5e5e5, transparent);
-    z-index: 5;
+    height: 10%;
+    background-image: linear-gradient(to top, #fff, transparent);
 }
 
 

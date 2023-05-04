@@ -5,6 +5,10 @@
     border-radius: 10px;
 }
 
+.modal{
+    z-index: 10;
+}
+
 .Iveta-After{
     width: 40%;
     height: 300px;

@@ -2,32 +2,12 @@
 
 
 .services{
-    background-color: #edd6d6;
     padding-top:50px ;
     padding-bottom:50px ;
     margin-top: 100px;
     position: relative;
 }
 
-.services::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    height: 5%;
-    width: 100%;
-    background-image: linear-gradient(to bottom, #e5e5e5, transparent);
-    z-index: 5;
-}
-
-.services::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 5%;
-    width: 100%;
-    background-image: linear-gradient(to top, #e5e5e5, transparent);
-    z-index: 5;
-}
 
 
 
@@ -68,6 +48,7 @@
     text-align: center;
     border-radius: 40px;
     transition: all ease 0.5s;
+    color: #000;
 }
 
 .services-item__link{
@@ -97,6 +78,7 @@
     text-transform: uppercase;
     letter-spacing: 2.5px;
     color: #000;
+    font-weight: bold;
     background-color: #fff;
     border: none;
     border-radius: 45px;

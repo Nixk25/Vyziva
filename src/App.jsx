@@ -4,7 +4,7 @@ import Cart from './components/Cart/Cart'
 import Main from './components/main/Main'
 import {commerce} from "../src/components/lib/commerce"
 import Checkout from './components/CheckoutForm/Checkout/Checkout'
-
+import ProductView from './components/Shop/ProductView'
 
 
 
@@ -50,7 +50,7 @@ const App = () => {
     const incomingOrder = await commerce.checkout.capture(checkoutTokenId, newOrder);
     setOrder(incomingOrder);
     refreshCart();
-  }
+  };
 
   const fetchCart = async () =>{
     const response = await commerce.cart.retrieve();
@@ -71,6 +71,7 @@ const App = () => {
             <Route path='/' element={<Main products={products} handleAddToCart={handleAddToCart} totalItems={cart?.total_items} />}/>
             <Route path='/cart' element={<Cart cart={cart} handleUpdateCartQty={handleUpdateCartQty} handleRemoveFromCart={handleRemoveFromCart} handleEmptyCart={handleEmptyCart}/> }/>
             <Route path='/checkout' element={<Checkout cart={cart} order={order} handleCaptureCheckout={handleCaptureCheckout}/>}/>
+            <Route path='/product-view/:id' element={<ProductView handleAddToCart={handleAddToCart} totalItems={cart?.total_items}/>}/>
           </Routes>
         </Router> 
     </div>

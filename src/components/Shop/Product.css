@@ -20,7 +20,7 @@
     border-radius: 15px;
     background-color: #FFE0EA;
     width: 400px;
-    height: 450px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,6 +29,9 @@
     border: 2px solid #EF86C1;
     margin: 30px;
 }
+.price{
+    text-align: center;
+}
 
 .description{
     text-align: center;
@@ -36,9 +39,8 @@
 
 .product:hover{
     transform: scale(1.04);
-    cursor: pointer;
 }
-.addToCartBtn {
+.addToCartBtn, .more-info {
     position: relative;
     border-radius: 10px;
     width: 200px;
@@ -51,14 +53,14 @@
     margin:auto;
 }
   
-.addToCartBtn, .button-icon, .button-text {
+.addToCartBtn, .button-icon, .button-text,.more-info {
     transition: all 0.3s;
 }
   
 .addToCartBtn .button-text {
     transform: translateX(30px);
-    color: #fff;
-    font-weight: 600;
+    color: #000;
+    font-weight: bold;
 }
   
 .addToCartBtn .button-icon {
@@ -71,6 +73,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.more-info{
+    color: #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    font-weight: bold;
 }
   
   
@@ -87,11 +105,11 @@
     transform: translateX(25px);
 }
   
-.addToCartBtn:active, .button-icon:active{
+.addToCartBtn:active, .button-icon:active, .more-info:active{
     background-color: #FFE0EA;
 }
   
-.addToCartBtn:active {
+.addToCartBtn:active,.more-info:active {
     border: 1px solid #FFE0EA;
 }
 
