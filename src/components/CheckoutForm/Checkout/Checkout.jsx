@@ -13,6 +13,7 @@ const Checkout = ({cart, order, handleCaptureCheckout}) => {
     const [activeStep, setActiveStep]= useState(0)
     const [data, setData] = useState({});
     const [checkoutToken, setCheckoutToken] = useState(null);
+    const [isFinished, setIsFinished] = useState(false);
     const classes = useStyles(); 
 
     useEffect( () => {
@@ -31,13 +32,20 @@ const Checkout = ({cart, order, handleCaptureCheckout}) => {
             <br />
             <Link to="/"><button className='back-to__main'>Zpět do obchodu</button></Link>
         </div>
+    ) : isFinished ? (
+        <div>
+            <Typography variant='h5'>Děkuji za vaši objednávku</Typography>
+            <Divider className={classes.divider}/>
+            <br />
+            <Link to="/"><button className='back-to__main'>Zpět do obchodu</button></Link>
+        </div>
     ) : (
         <div className={classes.spinner}>
             <CircularProgress/>
         </div>
     );
 
-    const Form = () => activeStep ===0 ? <AddressForm next={next}/>: <PaymentForm data={data} checkoutToken={checkoutToken} backStep={backStep} handleCaptureCheckout={handleCaptureCheckout} nextStep={nextStep}/>
+    const Form = () => activeStep ===0 ? <AddressForm next={next}/>: <PaymentForm timeout={timeout} data={data} checkoutToken={checkoutToken} backStep={backStep} handleCaptureCheckout={handleCaptureCheckout} nextStep={nextStep}/>
 
     const nextStep = () => setActiveStep((prevActiveStep) => prevActiveStep + 1);
     const backStep = () => setActiveStep((prevActiveStep) => prevActiveStep - 1);
@@ -45,6 +53,12 @@ const Checkout = ({cart, order, handleCaptureCheckout}) => {
     const next = (data) => {
         setData(data);
         nextStep(); 
+    }
+
+    const timeout = () => {
+        setTimeout(() => {
+            setIsFinished(true);
+        },3000);
     }
 
   return (
