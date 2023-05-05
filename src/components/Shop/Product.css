@@ -1,6 +1,7 @@
 .name{
     text-align: center;
     font-size: 20px;
+    margin-top: 10px;
 }
 
 .products{
@@ -31,6 +32,7 @@
 }
 .price{
     text-align: center;
+    margin-top: 10px;
 }
 
 .description{
@@ -51,6 +53,8 @@
     border: 1px solid #FF6093;
     background-color: #FF6093;
     margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
   
 .addToCartBtn, .button-icon, .button-text,.more-info {

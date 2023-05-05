@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import {Paper, Stepper, Step, StepLabel, Typography,Divider,CircularProgress} from "@material-ui/core"
+import {Paper, Stepper, Step, StepLabel, Typography,Divider} from "@material-ui/core"
 import useStyles from "./styles"
 import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import {commerce} from "../../lib/commerce";
 import { Link } from 'react-router-dom';
+import { NewtonsCradle } from '@uiball/loaders'
 
 
 const steps = ["Informace o Vás", "Platba"];
@@ -41,7 +42,7 @@ const Checkout = ({cart, order, handleCaptureCheckout}) => {
         </div>
     ) : (
         <div className={classes.spinner}>
-            <CircularProgress/>
+            <NewtonsCradle color='#FF6093'/>
         </div>
     );
 
