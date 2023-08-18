@@ -1,49 +1,45 @@
-
-
-.show{
-    cursor: default;
+.show {
+  cursor: default;
 }
 
-.portfolio-headline{
-    text-align: center;
-    margin-bottom: 100px;
+.portfolio-headline {
+  text-align: center;
+  margin-bottom: 100px;
 }
 
-.portfolio-projects{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 60px;
+.portfolio-projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 60px;
 }
 
-.project{
-    width: 30%;
-    height: 400px;
-    text-align: center;
-    gap: 10px;
-    border: 3px solid #EF86C1;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all ease 0.3s;
+.project {
+  width: 30%;
+  height: 400px;
+  text-align: center;
+  gap: 10px;
+  border: 3px solid #ef86c1;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all ease 0.3s;
 }
 
-.project:hover{
-    box-shadow: 2px 2px 2px 2px #EF86C1;
+.project:hover {
+  box-shadow: 0px 0px 10px #ef86c1;
 }
 
-.project-text{
-    margin: 20px;
+.project-text {
+  margin: 20px;
 }
 
-
-@media screen and (max-width:1340px) {
-    .project{
-        width: 90%;
-        display: block;
-        max-width: 500px;
-    }
-    
+@media screen and (max-width: 1340px) {
+  .project {
+    width: 90%;
+    display: block;
+    max-width: 500px;
+  }
 }

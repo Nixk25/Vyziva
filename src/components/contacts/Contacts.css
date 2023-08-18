@@ -1,151 +1,146 @@
-
-
-
-.headline{
-  margin-top: 105px;
+.headline {
+  margin-top: 100px;
   text-align: center;
   margin-bottom: 100px;
 }
 
-
-.contact-block{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
+.contact-block {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
 }
 
-.contacts{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
+.contacts {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
 }
 
 .contacts a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-.location, .telephone, .mail{
-    margin-bottom: 20px;
+.location,
+.telephone,
+.mail {
+  margin-bottom: 20px;
 }
 
-
-.contacts-title{
-    margin-bottom: 20px;
-    border-bottom:grey 1px solid;
+.contacts-title {
+  margin-bottom: 20px;
+  border-bottom: grey 1px solid;
 }
 
-.text-aside{
-    margin-left: 10px;
-    transition: all ease 0.3s;
-}
-
-.text-aside:hover{
-  color: #FF6093;
-}
-
-
-.contact-icon{
+.text-aside {
+  margin-left: 10px;
   transition: all ease 0.3s;
 }
 
+.text-aside:hover {
+  color: #ff6093;
+}
 
+.contact-icon {
+  transition: all ease 0.3s;
+}
 
-.contact-icon:hover{
-  color: #FF6093;
+.contact-icon:hover {
+  color: #ff6093;
 }
 
 .contact-form {
-  border: 3px solid #EF86C1;
-    background-color: #FFE0EA;
-    padding: 20px;
-    border-radius: 10px;
-    width: 400px;
-    justify-content: center;
+  border: 3px solid #ef86c1;
+  background-color: #ffe0ea;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  justify-content: center;
 }
-  
-  .contact-form label {
-    color: black;
+
+.contact-form label {
+  color: black;
 }
-  
-  .contact-form .heading {
-    font-size: 24px;
-    color: black;
-    margin-bottom: 12px;
-    font-weight: bold;
+
+.contact-form .heading {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 12px;
+  font-weight: bold;
+  display: block;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: all ease 0.5s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ff6093;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-form button {
+  background-color: #ff6093;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 860px) {
+  .contact-block {
     display: block;
-}
-  
-  .contact-form form {
-    display: flex;
-    flex-direction: column;
-}
-  
-  .contact-form label {
-    margin-bottom: 10px;
-}
-  
-  textarea {
-    resize: none;
-    height: 80px;
-    width: 100%
-}
-  
-  .contact-form input, .contact-form textarea {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    transition: all ease 0.5s;
   }
-  
-  .contact-form input:focus, .contact-form textarea:focus {
-    outline: none;
-    box-shadow: 0 0 5px #FF6093;
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .contact-form button {
-    background-color: #FF6093;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all ease 0.5s;
-  }
-  
-  .contact-form button:hover {
-    transform: scale(1.05);
 
+  .contacts {
+    width: 100%;
   }
-  
-@media screen and (max-width:860px) {
-    .contact-block{
-        display: block;
-    }
-    
-    .contacts{
-        width: 100%;
-    }
 
-    .contact-form{
-        width: 90%;
-        margin: auto;
-    }
+  .contact-form {
+    width: 90%;
+    margin: auto;
+  }
 }
 
-@media screen and (max-width:430px) {
-    .contacts{
-        font-size: 11px;
-        padding: 20px;
-        margin-top: 20px;
-    }
+@media screen and (max-width: 430px) {
+  .contacts {
+    font-size: 11px;
+    padding: 20px;
+    margin-top: 20px;
+  }
 
-    .contact-icon{
-      font-size: 12px;
-    }
+  .contact-icon {
+    font-size: 12px;
+  }
 }
