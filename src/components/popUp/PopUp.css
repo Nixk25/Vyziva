@@ -1,0 +1,11 @@
+.popup {
+  position: absolute;
+  top: 70px;
+  right: -70px;
+  overflow-x: hidden;
+  rotate: 45deg;
+  background-color: var(--addition-color);
+  padding-inline: 50px;
+  z-index: 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}

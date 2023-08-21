@@ -1,6 +1,7 @@
 import React from "react";
 import "./Shop.css";
 import Product from "./Product";
+import PopUp from "../popUp/PopUp";
 
 const Shop = ({ products }) => {
   return (
@@ -20,6 +21,7 @@ const Shop = ({ products }) => {
           </div>
         </div>
       </div>
+      <PopUp />
     </section>
   );
 };

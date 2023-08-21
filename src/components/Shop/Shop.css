@@ -1,34 +1,29 @@
-.shop{
-    background-color: var(--main-color);
-    position: relative;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    margin-bottom: 100px;
-    margin-top: 50px;
-    border-radius: 20px;
+.shop {
+  background-color: var(--main-color);
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+  margin-top: 50px;
 }
 
-
-
-
-
-.totalProducts{
-    position: fixed;
-    bottom: 64px;
-    left: 40px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    text-align: center;
-    background-color: #FF6093;
-    font-size: 13px;
-    color: #fff;
+.totalProducts {
+  position: fixed;
+  bottom: 64px;
+  left: 40px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #ff6093;
+  font-size: 13px;
+  color: #fff;
 }
 
-.cart-icon{
-    color: black;
-    position: fixed;
-    bottom: 30px;
-    left: 20px;
-    font-size: 30px;
+.cart-icon {
+  color: black;
+  position: fixed;
+  bottom: 30px;
+  left: 20px;
+  font-size: 30px;
 }
