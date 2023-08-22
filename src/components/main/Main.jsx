@@ -6,7 +6,7 @@ import Nav from "../Nav/Nav";
 import Portfolio from "../portfolio/Portfolio";
 import Contacts from "../contacts/Contacts";
 import Shop from "../Shop/Shop";
-
+import Footer from "../footer/Footer";
 const Main = ({ products }) => {
   return (
     <>
@@ -17,6 +17,7 @@ const Main = ({ products }) => {
       <Portfolio />
       <Shop products={products} />
       <Contacts />
+      <Footer />
     </>
   );
 };

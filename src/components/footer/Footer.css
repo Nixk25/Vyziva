@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.author span {
+  font-size: 25px;
+  font-family: "Dancing Script";
+}
+
+.author a {
+  text-decoration: none !important;
+  color: black;
+  transition: all ease 0.3s;
+}
+
+.author a:hover {
+  color: var(--addition-color);
+}
+
+@media (max-width: 470px) {
+  .footer {
+    font-size: 11px;
+  }
+}
