@@ -6,8 +6,8 @@ import Nav from "../Nav/Nav";
 import Portfolio from "../portfolio/Portfolio";
 import Contacts from "../contacts/Contacts";
 import Shop from "../Shop/Shop";
-
-const Main = ({ products, handleAddToCart, totalItems }) => {
+import Footer from "../footer/Footer";
+const Main = ({ products }) => {
   return (
     <>
       <Nav />
@@ -15,12 +15,9 @@ const Main = ({ products, handleAddToCart, totalItems }) => {
       <About />
       <Services />
       <Portfolio />
-      <Shop
-        products={products}
-        handleAddToCart={handleAddToCart}
-        totalItems={totalItems}
-      />
+      <Shop products={products} />
       <Contacts />
+      <Footer />
     </>
   );
 };
