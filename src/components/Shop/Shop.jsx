@@ -1,9 +1,10 @@
 import React from "react";
 import "./Shop.css";
 import Product from "./Product";
-import PopUp from "../popUp/PopUp";
+import { Link } from "react-router-dom";
+import { HiShoppingCart } from "react-icons/hi";
 
-const Shop = ({ products }) => {
+const Shop = ({ products, handleAddToCart, totalItems }) => {
   return (
     <section id="shop" className="shop">
       <div className="container">
@@ -16,12 +17,21 @@ const Shop = ({ products }) => {
           </div>
           <div className="products">
             {products.map((product) => (
-              <Product product={product} key={product.id} />
+              <Product
+                product={product}
+                handleAddToCart={handleAddToCart}
+                key={product.id}
+              />
             ))}
+          </div>
+          <div className="cart-total">
+            <Link to="/cart" className="cart-icon">
+              <HiShoppingCart />
+            </Link>
+            <span className="totalProducts">{totalItems}</span>
           </div>
         </div>
       </div>
-      <PopUp />
     </section>
   );
 };

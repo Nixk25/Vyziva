@@ -60,32 +60,6 @@
   margin-bottom: 100px;
 }
 
-.back-to__main {
-  justify-content: center;
-  font-weight: bold;
-  border-radius: 10px;
-  width: 200px;
-  height: 40px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  border: none;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  outline: none;
-  background-color: #ffff;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  transition: all ease 0.3s;
-}
-
-.back-to__main:hover {
-  background-color: #ff6093;
-  box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.2);
-  color: #fff;
-  transform: translateY(-5px);
-}
-
 .product-view__info {
   display: flex;
   flex-direction: column;

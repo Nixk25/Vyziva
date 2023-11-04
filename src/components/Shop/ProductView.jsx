@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { HiShoppingCart } from "react-icons/hi";
 import { commerce } from "../lib/commerce";
 import { Link } from "react-router-dom";
 import "./ProductView.css";
@@ -36,6 +37,9 @@ const ProductView = ({ totalItems }) => {
             <div className="text">
               <div className="upper-title">
                 <h2 className="title">{product?.name}</h2>
+                <p className="product-view__price">
+                  Cena: <strong>{product?.price?.formatted_with_code}</strong>
+                </p>
                 <Link to="/">
                   <button className="back-to__main">Jít zpět nakupovat</button>
                 </Link>
@@ -44,6 +48,12 @@ const ProductView = ({ totalItems }) => {
                 dangerouslySetInnerHTML={{ __html: product.description }}
                 className="product-view__description"
               ></p>
+              <div className="cart-total">
+                <Link to="/cart" className="cart-icon">
+                  <HiShoppingCart />
+                </Link>
+                <span className="totalProducts">{totalItems}</span>
+              </div>
             </div>
           </div>
         </div>
