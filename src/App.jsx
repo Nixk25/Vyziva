@@ -3,11 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Main from "./components/main/Main";
 import { commerce } from "../src/components/lib/commerce";
 import ProductView from "./components/Shop/ProductView";
-import Spinner from "./components/Spinner/Spinner";
 
 const App = () => {
   const [products, setProducts] = useState([]);
-  const [isLoading, setIsLoading] = useState("true");
 
   const fetchProducts = async () => {
     const { data } = await commerce.products.list();
@@ -19,12 +17,7 @@ const App = () => {
   }, []);
 
   return (
-    <div
-      onLoad={() => {
-        setIsLoading(false);
-      }}
-    >
-      {isLoading ? <Spinner /> : ""}
+    <div>
       <Router>
         <Routes>
           <Route path="/" element={<Main products={products} />} />

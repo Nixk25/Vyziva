@@ -9,7 +9,7 @@ const Footer = () => {
       </h4>
       <h4 className="author">
         Vytvořil{" "}
-        <a href="https://www.nicolasmelda.cz">
+        <a href="https://www.nicolasmelda.com">
           <span>Nick</span>
         </a>
       </h4>

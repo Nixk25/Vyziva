@@ -2,11 +2,9 @@ import React, { useEffect, useState } from "react";
 import { commerce } from "../lib/commerce";
 import { Link } from "react-router-dom";
 import "./ProductView.css";
-import Spinner from "../Spinner/Spinner";
 
 const ProductView = () => {
   const [product, setProduct] = useState({});
-  const [loading, setLoading] = useState(true);
 
   const fetchProducts = async (id) => {
     const response = await commerce.products.retrieve(id);
@@ -20,13 +18,7 @@ const ProductView = () => {
   }, []);
 
   return (
-    <section
-      onLoad={() => {
-        setLoading(false);
-      }}
-      className="product-view"
-    >
-      {loading && <Spinner />}
+    <section className="product-view">
       <div className="container">
         <div className="product-view">
           <div className="product-view__info">
