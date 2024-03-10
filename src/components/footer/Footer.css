@@ -3,12 +3,18 @@
 .footer {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  padding-inline: 20px;
   align-items: center;
   background-color: var(--main-color);
   padding-top: 20px;
   padding-bottom: 20px;
+  position: relative;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .author span {
@@ -26,8 +32,75 @@
   color: var(--addition-color);
 }
 
+.left {
+  max-width: 50%;
+}
+
+.input {
+  position: relative;
+  margin-top: 20px;
+}
+
+.input input {
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+  outline: 1px solid transparent;
+  transition: all ease 200ms;
+}
+
+.input input:focus {
+  outline: 1px solid var(--addition-color);
+}
+
+.input button {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  padding-inline: 10px;
+  background: var(--addition-color);
+  border: none;
+  outline: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #fff;
+}
+
+.input button:hover {
+  cursor: pointer;
+  filter: brightness(1.1);
+}
+
+.input button:active {
+  cursor: pointer;
+  filter: brightness(0.9);
+}
+
+.thanks {
+  font-size: 1.2rem;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
 @media (max-width: 470px) {
   .footer {
     font-size: 11px;
+    flex-direction: column;
+  }
+
+  .form {
+    order: 1;
+    margin-bottom: 50px;
+    width: 80%;
+  }
+
+  .left {
+    order: 2;
+    text-align: center;
   }
 }

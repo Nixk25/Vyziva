@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+:root {
+  --main-color: #ffe0ea;
+  --secondary-color: #ffa0be;
+  --addition-color: #ff6093;
+}
 
 * {
   margin: 0;
@@ -7,6 +12,8 @@
   outline: 0;
   list-style: none;
   text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 .container {
@@ -23,10 +30,4 @@ body {
 
 ::-webkit-scrollbar {
   display: none;
-}
-
-:root {
-  --main-color: #ffe0ea;
-  --secondary-color: #ffa0be;
-  --addition-color: #ff6093;
 }

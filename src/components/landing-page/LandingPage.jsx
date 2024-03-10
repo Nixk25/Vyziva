@@ -16,6 +16,10 @@ const LandingPage = () => {
             <div className="main-logo animate__animated animate__zoomIn animate__delay-1s">
               <img className="logo" src={image} alt="logo výživa Lucie" />
             </div>
+
+            <a href="#contact" className="button conc">
+              Kontaktujte mě
+            </a>
           </div>
         </div>
       </section>

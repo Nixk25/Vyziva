@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Nav.css";
 import { FaHome } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
 import { FaListUl } from "react-icons/fa";
-import { MdWork } from "react-icons/md";
+import { MdClose, MdMenu, MdWork } from "react-icons/md";
 import { HiShoppingCart } from "react-icons/hi";
 import { AiTwotonePhone } from "react-icons/ai";
 import { Link } from "react-scroll";
 
 const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen((prev) => !prev);
+  };
   return (
-    <div>
+    <div className="navbar">
       <nav>
         <div className="nav-elements">
           <Link
@@ -104,6 +109,53 @@ const Nav = () => {
           </div>
         </div>
       </nav>
+      <div className="menu-section">
+        <div className="menu-icon">
+          <MdMenu onClick={toggleMenu} size={30} />
+        </div>
+        <div className={`menu ${isOpen ? "active" : ""}`}>
+          <div onClick={toggleMenu} className="close-btn">
+            <MdClose color="white" size={30} />
+          </div>
+
+          <div className="menu-content">
+            <div className="menu-link">
+              <Link to="home" onClick={toggleMenu}>
+                <FaHome />
+                <h3>Domov</h3>
+              </Link>
+              <div className="nav-desc"></div>
+            </div>
+            <div className="menu-link">
+              <Link to="about" onClick={toggleMenu}>
+                {" "}
+                <FaUserAlt /> <h3>O mně</h3>
+              </Link>
+            </div>
+            <div className="menu-link">
+              <Link to="services" onClick={toggleMenu}>
+                <FaListUl /> <h3>Služby</h3>
+              </Link>
+            </div>
+            <div className="menu-link">
+              <Link to="portfolio" onClick={toggleMenu}>
+                <MdWork /> <h3>Portfolio</h3>
+              </Link>
+            </div>
+            <div className="menu-link">
+              <Link to="shop" onClick={toggleMenu}>
+                <HiShoppingCart />
+                <h3>Obchod</h3>
+              </Link>
+            </div>
+            <div className="menu-link">
+              <Link to="contact" onClick={toggleMenu}>
+                <AiTwotonePhone /> <h3>Kontakt</h3>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
