@@ -1,19 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Footer.css";
 
 const Footer = () => {
-  const [email, setEmail] = useState("");
-  const [loading, setLoading] = useState("Odebírat");
-  const [isSend, setIsSend] = useState(false);
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading("Posílání...");
-    setTimeout(() => {
-      setEmail("");
-    }, 2000);
-    setLoading("Odebírat");
-    setIsSend(true);
-  };
   return (
     <div className="footer" id="footer">
       <div className="left">
@@ -27,31 +15,25 @@ const Footer = () => {
           </a>
         </h4>
       </div>
-      {!isSend ? (
-        <form
-          className="form"
-          action="https://formsubmit.co/nutricni.poradenstvi.vm@seznam.cz"
-          method="POST"
-          onSubmit={handleSubmit}
-        >
-          <span class="heading">Odebírejte můj newsletter</span>
-          <div className="input">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Váš email..."
-              required
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
-            ></input>
 
-            <button type="submit">{loading}</button>
-          </div>
-        </form>
-      ) : (
-        <h3 className="thanks">Děkuji vám za odběr</h3>
-      )}
+      <form
+        className="form"
+        action="https://formsubmit.co/nutricni.poradenstvi.vm@seznam.cz"
+        method="POST"
+      >
+        <span class="heading">Odebírejte můj newsletter</span>
+        <div className="input">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Váš email..."
+            required
+          ></input>
+
+          <button type="submit">Odebírat</button>
+        </div>
+      </form>
     </div>
   );
 };
