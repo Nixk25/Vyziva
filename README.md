@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+<h1>Nutritional counselling Lucie 🍏</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2>Intro</h2>
+Nutriční poradenství Lucie is a project I developed for my mother. It serves as her personal website for providing nutrition advice and services. Originally conceived as an e-commerce platform, we decided to focus on the informational aspect instead. As a nutrition consultant, my mother wanted to have her own web presence to reach potential clients.
 
-## Available Scripts
+<h2>Tech Stack 🛠️</h2>
+<ul>
+<li>React: For building the frontend.
+</li>
+<li>Stripe: Integrated for handling payments (originally planned for the e-commerce functionality).</li>
+</ul>
 
-In the project directory, you can run:
+<h2>Features 🌟</h2>
+<ul>
+<li>Static Web Pages: The website provides information about nutrition services, consultation, and expertise.</li>
+<li>Responsive Design: The pages are designed to adapt to different screen sizes, ensuring a consistent experience across devices.</li>
+</ul>
 
-### `npm start`
+<h2>Process 🚀</h2>
+Nutriční poradenství Lucie started with the goal of creating a professional website for my mother’s nutrition consulting services. We began by designing wireframes and then proceeded to implement the design using React. Although we initially planned to include e-commerce features (using Stripe for payments), we decided to focus on the informational aspect due to practical considerations.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h2>Learnings 🧠</h2>
+<ul>
+<li>React Development: Building static web pages and components.</li>
+<li>Client Communication: Understanding the client’s needs and translating them into a functional website.</li>
+<li>Project Scope Management: Adapting the project based on practical considerations.</li>
+</ul>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h2>Project Visuals 📸</h2>
+<img width="1439" alt="Snímek obrazovky 2024-04-10 v 11 51 35" src="https://github.com/Nixk25/Vyziva/assets/116200689/64ea54e3-efc5-416d-a035-994d9f775aa2">
